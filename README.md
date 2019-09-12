@@ -5,6 +5,8 @@
 
 Examples for AI in Unreal Engine 4
 
-Special Thanks:
+## Special Thanks:
+
 I would like to thank my discord community members for supporting this project:
+
 DevilNaiden#3379
