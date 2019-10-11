@@ -4,10 +4,16 @@ using UnrealBuildTool;
 
 public class UE4_AI_Examples : ModuleRules
 {
-	public UE4_AI_Examples(ReadOnlyTargetRules Target) : base(Target)
-	{
-		PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
+    public UE4_AI_Examples(ReadOnlyTargetRules Target) : base(Target)
+    {
+        PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
 
-		PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore", "HeadMountedDisplay" });
-	}
+        PublicIncludePaths.AddRange(
+           new string[]
+           {
+               "Runtime/AIModule/Classes/Navigation/"
+           });
+
+        PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore", "HeadMountedDisplay", "AIModule", "NavigationSystem" });
+    }
 }
